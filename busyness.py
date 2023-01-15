@@ -60,8 +60,8 @@ def log_vital_busyness_to_csv(browser, interval_seconds):
 
 
 def main():
-    b = get_browser(headless=False)
-    log_vital_busyness_to_csv(b, 15)
+    b = get_browser(headless=True)
+    log_vital_busyness_to_csv(b, 5 * 60)
 
 
 if __name__ == "__main__":
