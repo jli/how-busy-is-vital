@@ -72,7 +72,7 @@ today_df.index = convert_datetime_column_to_weekday_and_time(today_df.index.to_s
 
 # chart with vertical rule for current time
 now_df = pd.DataFrame([dict(time=today_df.index[-1])])
-now_chart = alt.Chart(now_df).mark_rule(opacity=0.2).encode(x="time")
+now_chart = alt.Chart(now_df).mark_rule(opacity=0.7, color="red").encode(x="time")
 
 
 ### display
